@@ -1,8 +1,8 @@
 import tensorflow as tf
 import numpy as np
 from flask import Flask, request, jsonify
-from .models import initial_model
-from .utilities import process_img
+from models import initial_model
+from utilities import process_img
 
 
 model = initial_model()  # created upon deployment instead of every call of predict
