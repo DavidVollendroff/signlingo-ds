@@ -1,1 +1,1 @@
-web: gunicorn -w 4 app:APP -t 120
+web: gunicorn "asl:create_app()"
