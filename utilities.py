@@ -7,5 +7,5 @@ def process_img(input_image):
     """
     input_image = tf.keras.preprocessing.image.load_img(input_image, target_size=(200, 200))
     input_image = tf.keras.preprocessing.image.img_to_array(input_image)
-    input_image = input_image.flatten()/255
+    input_image = input_image/255
     return input_image
